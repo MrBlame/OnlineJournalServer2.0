@@ -1,0 +1,10 @@
+Base Exception Type: System.Exception: Attempted to save out file before data is complete.
+   at Server.ReceivedFile.SaveFileToDisk(String saveLocation) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\ReceivedFile.cs:line 127
+   at Server.MessageHandler.IncomingPartialFileData(PacketHeader header, Connection connection, Byte[] data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 150
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758
+
+Stack Trace:    at Server.ReceivedFile.SaveFileToDisk(String saveLocation) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\ReceivedFile.cs:line 127
+   at Server.MessageHandler.IncomingPartialFileData(PacketHeader header, Connection connection, Byte[] data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 150
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758

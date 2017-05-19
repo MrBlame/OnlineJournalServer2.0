@@ -1,0 +1,6 @@
+Base Exception Type: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Server.MessageHandler.AddNewReceivedItem(ReceivedFile data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 252
+   at Server.MessageHandler.AddFileInfo(PacketHeader header, Connection connection, SendInfo info) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 191
+
+Stack Trace:    at Server.MessageHandler.AddNewReceivedItem(ReceivedFile data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 252
+   at Server.MessageHandler.AddFileInfo(PacketHeader header, Connection connection, SendInfo info) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 191

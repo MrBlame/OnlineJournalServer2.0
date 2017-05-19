@@ -1,0 +1,10 @@
+Base Exception Type: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Server.MessageHandler.SaveFile() in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 243
+   at Server.MessageHandler.IncomingPartialFileData(PacketHeader header, Connection connection, Byte[] data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 92
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758
+
+Stack Trace:    at Server.MessageHandler.SaveFile() in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 243
+   at Server.MessageHandler.IncomingPartialFileData(PacketHeader header, Connection connection, Byte[] data) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 92
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758

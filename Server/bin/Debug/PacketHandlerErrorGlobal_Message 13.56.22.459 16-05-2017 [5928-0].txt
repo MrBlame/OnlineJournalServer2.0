@@ -1,0 +1,26 @@
+Base Exception Type: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Server.Dao.StudentPerformanceDao.CalculateAverageMark(DataTable table) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 150
+   at Server.Dao.StudentPerformanceDao.CreateTableForSubject(Int32 labworkNumber, String subjectId) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 117
+   at Server.Dao.StudentPerformanceDao.GetGroupPerformance(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 73
+   at Server.CommandRecognizer.GetGroupPerformance(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\CommandRecognizer.cs:line 144
+   at Server.CommandRecognizer.GenerateDataFromRequest(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\CommandRecognizer.cs:line 64
+   at Server.MessageHandler.GenerateDataFromRequest(String message) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 93
+   at Server.MessageHandler.ReadIncommingCommand(PacketHeader header, Connection connection, String message) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 83
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758
+
+Stack Trace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Server.Dao.StudentPerformanceDao.CalculateAverageMark(DataTable table) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 150
+   at Server.Dao.StudentPerformanceDao.CreateTableForSubject(Int32 labworkNumber, String subjectId) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 117
+   at Server.Dao.StudentPerformanceDao.GetGroupPerformance(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\Dao\StudentPerformanceDao.cs:line 73
+   at Server.CommandRecognizer.GetGroupPerformance(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\CommandRecognizer.cs:line 144
+   at Server.CommandRecognizer.GenerateDataFromRequest(String[] request) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\CommandRecognizer.cs:line 64
+   at Server.MessageHandler.GenerateDataFromRequest(String message) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 93
+   at Server.MessageHandler.ReadIncommingCommand(PacketHeader header, Connection connection, String message) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 83
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758

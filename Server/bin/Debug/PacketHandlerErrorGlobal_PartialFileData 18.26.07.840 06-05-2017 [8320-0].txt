@@ -1,0 +1,18 @@
+Base Exception Type: System.UnauthorizedAccessException: Access to the path 'C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\ReceivedFiles' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Server.ReceivedFile.SaveFileToDisk(String saveLocation) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\ReceivedFile.cs:line 82
+   at Server.MessageHandler.SaveFile() in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 236
+   at Server.MessageHandler.IncomingPartialFileDataInfo(PacketHeader header, Connection connection, SendInfo info) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 98
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758
+
+Stack Trace:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at Server.ReceivedFile.SaveFileToDisk(String saveLocation) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\ReceivedFile.cs:line 82
+   at Server.MessageHandler.SaveFile() in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 236
+   at Server.MessageHandler.IncomingPartialFileDataInfo(PacketHeader header, Connection connection, SendInfo info) in C:\Users\Infamous\Desktop\Projects\OnlineJournal\Server\Server\MessageHandler.cs:line 98
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\Tools\PacketUnwrappers.cs:line 97
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride) in C:\Users\Infamous\Desktop\Projects\NetworkComms.Net\NetworkCommsDotNet\NetworkComms.cs:line 758
